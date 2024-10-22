@@ -1,11 +1,11 @@
 
-# Demo
-https://www.youtube.com/watch?v=MY19T2pgrQw
+# On Chain Demo (https://libere-base.vercel.app/)
+https://libere-base.vercel.app/
 
 Video :  https://www.youtube.com/watch?v=MY19T2pgrQw
 
 Web:
-https://libere-public-10.vercel.app
+https://libere-base.vercel.app/
 
 Contract :
 https://base-sepolia.blockscout.com/address/0x734d5521231177D098F2E780d0d4bd26CF79248a
@@ -13,16 +13,16 @@ https://base-sepolia.blockscout.com/address/0x734d5521231177D098F2E780d0d4bd26CF
 # Smart Contract
 
 
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
-
-import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/common/ERC2981.sol";
-import "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
-import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
-
-contract LibereLibrary is ERC1155, Ownable, ERC2981, IERC1155Receiver {
+    // SPDX-License-Identifier: MIT
+    pragma solidity ^0.8.9;
+    
+    import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+    import "@openzeppelin/contracts/access/Ownable.sol";
+    import "@openzeppelin/contracts/token/common/ERC2981.sol";
+    import "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
+    import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
+    
+    contract LibereLibrary is ERC1155, Ownable, ERC2981, IERC1155Receiver {
 
     struct Item {
         uint256 id;
